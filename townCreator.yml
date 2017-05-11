@@ -1,6 +1,5 @@
 ---
-- hosts: townCreator
-  remote_user: anorak
+- hosts: localhost
   become: true
   tasks:
 
@@ -98,7 +97,9 @@
        register: default_exists
 
      - name: delete default site
-       command: rm /etc/nginx/sites-available/default
+       file: 
+         state: absent
+         path: /etc/nginx/sites-available/default
        when: default_exists.stat.exists
 
      - name: Filebeat Move
