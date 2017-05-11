@@ -1,0 +1,120 @@
+#svg *, .svg * {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#waitform {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    cursor: wait;
+}
+
+a {
+    color: gray;
+}
+
+em {
+    padding: 0px;
+    font-weight: bold;
+    margin-left: -20px;
+    color: rgba(250, 250, 250, 0.75);
+}
+
+body {
+    font-family: Georgia;
+}
+
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-size: 80%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.control_panel {
+    padding: 15px;
+    padding-bottom: 0px;
+    position: absolute;
+    z-index: 10;
+}
+
+.town_prop span {
+    display: inline-block;
+    margin-top: 15px;
+    width:100%;
+}
+
+.town_prop *{
+    text-align: left;
+    list-style-type: lower-roman;
+    font-size: 100%;
+}
+#leader {
+   margin-top: 0px;
+}
+.town_prop h6{
+    margin-top: 5px
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: rgba(250, 250, 250, 0.75);
+    padding: 0px;
+    text-align:center;
+}
+.town_prop li{
+    padding-bottom: 0px;
+}
+
+#factions li {
+    list-style-type: square;
+}
+.house_props{
+    position: absolute;
+    color: #fff;
+    border-radius: 6px;
+    text-align: left;
+    margin-left: 400px;
+    width: 20%;
+}
+.house_props em{
+   margin-left: 5px;
+   font-size: 100%;
+   color: black;
+}
+.house_props span {
+   display: block;
+}
+#house_number{
+    display: table-cell;
+    text-align: center;
+}
+#house_props_body{
+    background-color: rgba(220, 220, 220, 0.8);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 5px 10px;
+    font-size: 80%;
+    color: black;
+}
+#house_props_header{
+    background-color: rgba(67, 67, 67, 0.85);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 5px 10px;
+}
+.house_prop{
+    padding-top: 4px;
+}
+#house_props_body p{
+   font-size: 100%;
+}

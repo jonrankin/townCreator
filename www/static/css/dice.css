@@ -1,0 +1,74 @@
+.center_field {
+    display:inline-block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.center_field * {
+    font-family: Trebuchet MS;
+    /*padding: 5px  5px 15px;*/
+}
+
+.bottom_field {
+    text-align: center;
+    bottom: 5px;
+    width: inherit;
+    padding: 0px;
+}
+
+#town_name {
+    font-size: 32pt;
+    word-spacing: 0.2em;
+    padding: 5px 15px;
+    color: rgba(250, 250, 250, 0.75);
+    top: 45%;
+}
+
+#labelhelp {
+    font-size: 12pt;
+    padding: 5px 15px;
+    color: rgba(21, 26, 26, 0.5);
+    bottom: 50px;
+}
+
+#set {
+    text-align: center;
+    font-size: 26pt;
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0);
+    top: 60%;
+}
+
+#sethelp {
+    font-size: 12pt;
+    color: rgba(21, 26, 26, 0.5);
+    background: none;
+    top: 25%;
+}
+
+#selector_div button {
+    font-size: 20pt;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    border: none;
+    width: 5em;
+    top: 62%;
+}
+
+.dice_place {
+    border: solid black 1px;
+}
+#info_div{
+    width: 99%;
+    margin-left: 5px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /*height: 95vh;*/
+    float: left;
+    padding: 5px 5px 20px;
+    background-color: rgba(21, 26, 26, 0.6);
+}
+

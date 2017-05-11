@@ -1,0 +1,319 @@
+{
+"common_curiousity":[
+{
+"roll":1,
+"response":"Ostracised from the community, more than happy to help ruin the plans of others for good or bad."
+},
+{
+"roll":2,
+"response":"Were once caught in a compromising position with a well-bred member of large livestock. It brings everyone else great joy to ensure they never live it down."
+},
+{
+"roll":3,
+"response":"Have a surprisingly large assortment of goods for trade or sale."
+},
+{
+"roll":4,
+"response":"Incredibly friendly, attempting to summon an earth-shaking terror using an underground shrine they found, need help recovering the innocuous missing pieces."
+},
+{
+"roll":5,
+"response":"Fervent devotees to a known religion."
+},
+{
+"roll":6,
+"response":"Protectors of an ancient and terrible secret."
+},
+{
+"roll":7,
+"response":"Cannibals."
+},
+{
+"roll":8,
+"response":"Share the same bloodline with other houses that share the same result."
+},
+{
+"roll":9,
+"response":"Addicted to a strange and wonderful new drug they have discovered."
+},
+{
+"roll":10,
+"response":"Under the influence of a sentient plant growing in the area, its form depends on the number of homes affected:",
+"add":[
+{
+"houses":"1",
+"response":"Discoloured patches on the skin, small hidden sprouts."
+},
+{
+"houses":"3",
+"response":"Root clusters in the darkness at the back of their throats, speaking for them, a fledgling mother plant beginning to grow in the area."
+},
+{
+"houses":"6",
+"response":"A large, established plant, protected by those given over more wholly to its symbiosis."
+}
+]
+},
+{
+"roll":11,
+"response":"Insect cult. If six or more homes are affected, a shrine containing a physical manifestation of their worship exists in the area."
+},
+{
+"roll":12,
+"response":"Aggressive/distrustful towards outsiders."
+},
+{
+"roll":13,
+"response":"Dress like demons and prance around burning pyres when the moon is full."
+},
+{
+"roll":14,
+"response":"Militant nudists."
+},
+{
+"roll":15,
+"response":"Share a psychic connection to one another that allows them to simultaneously experience everything that happens to each individual member, and grants them terrifying powers of the mind when their number exceeds fourteen."
+},
+{
+"roll":16,
+"response":"Extremely welcoming towards outsiders."
+},
+{
+"roll":17,
+"response":"Enthusiastic practitioners of a strange pastime."
+},
+{
+"roll":18,
+"response":"Speak in a dialect not used for centuries."
+},
+{
+"roll":19,
+"response":"Organic body-horror replacements from a fallen star in the hills. They smell of thyme and their flesh is all-too pliable."
+},
+{
+"roll":20,
+"response":"Will attempt to burn Magic-Users and Clerics like witches."
+},
+{
+"roll":21,
+"response":"Capture children of all ages as offering to the toad beast in the woods for the protection of the town. The sacrifices sleep curled within amber pus-filled holes in the hardened skin of its belly until they emerge as misshapen and fantastic children of the fae. The rest of the town is oblivious"
+},
+{
+"roll":22,
+"response":"Their windows are dark and they do not answer their doors."
+},
+{
+"roll":23,
+"response":"Share a competitive rivalry over something quaint. (Hunting, baking, growing large vegetables, needlework, gardening, offering sacrifices to their abhorrent god, etc.)"
+},
+{
+"roll":24,
+"response":"Are afflicted by a terrible, undocumented ailment."
+},
+{
+"roll":25,
+"response":"Wash their dead in the creek and bury them beneath the silt, returning in a week's time to retrieve their bare, yellowed bones."
+},
+{
+"roll":26,
+"response":"Form the militia of the Blue Palm, adept in the use of paralytic poisons derived from local flowers."
+},
+{
+"roll":27,
+"response":"Incredibly eager to marry-off/apprentice their sons and daughters, will go to great lengths to prove the superiority of their children over their neighbour's."
+},
+{
+"roll":28,
+"response":"Summoned a melting pyramid-headed lady of unspeakable lust and terror as a plaything and instead became her emotional puppets. She can't hurt them but is trying damned hard to make them hurt themselves, she can't leave this plane of existence until they are all dead. She resides in secret at the home nearest to the centre of the group and she hates it here."
+},
+{
+"roll":29,
+"response":"Esoteric horticultural society, with a 3 in 6 chance of having access to any rare plant you care to mention and a high likelihood of losing their minds over any specimens of your own you'd like to share."
+},
+{
+"roll":"30+",
+"response":"Recently welcomed the offspring of their god into the womb of a blushing bride on her wedding night, we're all terribly proud."
+}
+],
+"d4_table":{
+"1":[
+{
+"roll":1,
+"response":"A partly-excavated ziggurat hewn from seemingly moist red stone."
+},
+{
+"roll":2,
+"response":"A shunned manor."
+},
+{
+"roll":3,
+"response":"Large statue of a many-armed woman dangling various iron scales from chains. A golden swine stands in one of the largest, holes in its back collect rainwater that drains slowly from its teats over time. Various wedding rites and legal proceedings are conducted by filling the other scales then climbing into the final scale to release the lever protruding from the statue's mouth to discover if they match the weight of the swine."
+},
+{
+"roll":4,
+"response":"A series of bronze columns wrapped in thick, healthy vines, bearing forth sprays of waxy leaves and plump purple fruits."
+}
+],
+"2":[
+{
+"roll":1,
+"response":"An obscenely elaborate gateway to nowhere."
+},
+{
+"roll":2,
+"response":"A well-equipped timber fort, with the severed heads of horses impaled on pikes at intervals around its perimeter."
+},
+{
+"roll":3,
+"response":"A strange sinkhole rife with brilliantly-coloured fungus."
+},
+{
+"roll":4,
+"response":"Monolith of carven white soapstone in the centre of town. Rearrange the houses so that they form rough curving lines radiating out from the monolith. Most of the townspeople seem entirely unaware of this pattern, but once you mention it to them will descend into obsession over it, eventually seeking to unlock the monolith and what lies beneath."
+}
+],
+"3":[
+{
+"roll":1,
+"response":"Clusters of huge pink-tinged crystals growing from some obscured central mass."
+},
+{
+"roll":2,
+"response":"Memorial crypt holding the fallen of past battles, decorated above by the bones of their enemies."
+},
+{
+"roll":3,
+"response":"Bridge over an algae-strewn stream, drilled full of holes. It is a rite of passage for the young men, not for pleasure, but to deny the begging crone of the water their manhood while she gnaws at their thighs."
+},
+{
+"roll":4,
+"response":"Elaborate tower like one big perpetual motion water mechanism built around a seemingly bottomless pool full of golden eels."
+}
+],
+"4":[
+{
+"roll":1,
+"response":"Many-spired black stone church casting a cryptic shadow."
+},
+{
+"roll":2,
+"response":"A mostly-ransacked library and observatory converted into a watchtower."
+},
+{
+"roll":3,
+"response":"An enormous pale tree, its reaching branches dropping soft purple leaves over the town. Lost baby teeth have been hammered into its twisting trunk, gradually sucked in over the years, and a dark hole gapes near its swollen roots, the faint soft sound of moving air."
+},
+{
+"roll":4,
+"response":"An alchemist's pit of living molten metal contained below a ring of standing stones and a descending spiral staircase."
+}
+]
+},
+"d12_table":[
+{
+"roll":1,
+"response":"Weather-worn image of an old god."
+},
+{
+"roll":2,
+"response":"Mystically placed patterns of stones."
+},
+{
+"roll":3,
+"response":"Evidence of some recent natural disturbance."
+},
+{
+"roll":4,
+"response":"Hanging tree."
+},
+{
+"roll":5,
+"response":"Sour earth."
+},
+{
+"roll":6,
+"response":"Verdant hole in the earth."
+},
+{
+"roll":7,
+"response":"Watchtower."
+},
+{
+"roll":8,
+"response":"Healer's hut."
+},
+{
+"roll":9,
+"response":"Remains of destroyed structure."
+},
+{
+"roll":10,
+"response":"Site of recent slaughter."
+},
+{
+"roll":11,
+"response":"Patch of stubborn forest."
+},
+{
+"roll":12,
+"response":"Wellspring."
+}
+],
+"leader":[
+{
+"roll":1,
+"result":"The nearest odd number to the d4"
+},
+{
+"roll":2,
+"result":"The nearest even number to the d4"
+},
+{
+"roll":3,
+"result":"The nearest matching number to the d4"
+},
+{
+"roll":4,
+"result":"The furthest matching number from the d4"
+},
+{
+"roll":5,
+"result":"The furthest odd number from the d4"
+},
+{
+"roll":6,
+"result":"The furthest even number from the d4"
+},
+{
+"roll":7,
+"result":"Council with a representative from each number group lower than the d4"
+},
+{
+"roll":8,
+"result":"Council with a representative from each number group"
+},
+{
+"roll":9,
+"result":"Council with a representative from each number group higher than the d4"
+},
+{
+"roll":10,
+"result":"We do not speak its name"
+},
+{
+"roll":11,
+"result":"Patch of stubborn forest"
+},
+{
+"roll":12,
+"result":"Wellspring"
+}
+],
+"town_name":{
+"first":["Chelm", "Elm", "El", "Bur", "En", "Eg", "Pem", "Pen", "Edg", "Sud", "Sod", "Hors", "Dur", "Sun", "Nort", "Brad", "Farn", "Barn", "Dart", "Hart", "South", "Shaft", "Blan", "Rock", "Alf", "Wy", "Marl", "Staf", "Wet", "Cas", "Stain", "Whit", "Stap", "Brom", "Wych", "Watch", "Win", "Horn", "Mel", "Cook", "Hurst", "Ald", "Shriv", "Kings", "Clere", "Maiden", "Leather", "Brack","Brain", "Walt", "Prest", "Wen", "Flit", "Ash"],
+"doubles":["Bass", "Chipp", "Sodd", "Sudd", "Ell", "Burr", "Egg", "Emm", "Hamm", "Hann", "Cann", "Camm", "Camb", "Sund", "Pend", "End", "Warr", "Worr", "Hamp", "Roth", "Both", "Sir", "Cir", "Redd", "Wolv", "Mill", "Kett", "Ribb", "Dribb", "Fald", "Skell", "Chedd", "Chill", "Tipp", "Full", "Todd", "Abb", "Booth"],
+"postdoubles": ["ing", "en", "er"],
+"mid":["bas", "ber", "stan", "ring", "den", "-under-", " on ", "en", "re", "rens", "comp", "mer", "sey", "mans"],
+"last":["ford", "stoke", "ley", "ney",  "don", "den", "ton", "bury", "well", "beck", "ham", "borough", "side", "wick", "hampton", "wich", "cester", "chester", "ling", "moor", "wood", "brook", "port", "wold", "mere", "castle", "hall", "bridge", "combe", "smith", "field", "ditch", "wang", "over", "worth", "by", "brough", "low", "grove", "avon", "sted", "bourne", "borne", "thorne", "lake", "shot", "bage", "head", "ey", "nell", "tree", "down"]
+}
+}
