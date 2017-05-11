@@ -1,6 +1,5 @@
 server {
     listen 80;
-    server_name 10.142.0.5;
     error_log /var/log/dm-buddy.log;
     access_log /var/log/dm-buddy-acc.log;
 
