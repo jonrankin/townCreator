@@ -1,0 +1,136 @@
+---
+- hosts: townCreator
+  remote_user: anorak
+  become: true
+  tasks:
+
+
+# INSTALL SERVICES
+
+     - name: NGINX | add NGINX signing key
+       apt_key: 
+          url=http://nginx.org/keys/nginx_signing.key 
+          state=present
+
+     - name: ELASTIC | add ELASTIC signing key
+       apt_key:
+          url=https://packages.elasticsearch.org/GPG-KEY-elasticsearch
+          state=present
+
+     - name: NGINX | Add Nginx repo
+       apt_repository:
+         repo: ppa:nginx/development
+
+     - name: ELASTICSEARCH, FILEBEAT | Add 
+       apt_repository:
+         repo: deb https://artifacts.elastic.co/packages/5.x/apt stable main
+         state: present
+     
+     - name: NGINX | Updating apt cache
+       apt:
+         update_cache: yes
+
+     - name: Check Nginx configs exist
+       stat: path=/etc/nginx
+       register: nginx_exists
+ 
+     - name: NGINX | Installing NGINX
+       apt:
+         pkg: nginx
+         state: latest
+       when: not nginx_exists.stat.exists
+
+     - name: Check filebeat exists
+       stat: path=/etc/filebeat
+       register: filebeat_exists
+
+     - name: filebeat | installing filebeat
+       apt:
+         pkg: filebeat
+         state: latest
+       when: not filebeat_exists.stat.exists
+
+     - name: Check gunicorn exists
+       stat: path=/etc/gunicorn
+       register: gunicorn_exists
+
+     - name: gunicorn | installing gunicorn
+       apt:
+         pkg: gunicorn
+         state: latest
+       when: not gunicorn_exists.stat.exists
+
+     - name: python-pip | Installing pip
+       apt:
+         pkg: python-pip
+         state: latest
+
+     - name: python-dev | Installing Dev Python
+       apt:
+         pkg: python-dev
+         state: latest
+
+# PULL REPOSITORY AND SET CONFIGURATIONS
+     - name: clone git repository
+       git:
+        repo: https://github.com/Fiachra0/townCreator.git
+        dest: ~/townCreator/
+        clone: yes
+        force: yes
+
+     - name: python-pip | Updating PIP
+       pip:
+         name: pip
+         extra_args: --upgrade
+
+     - name: python-pip | Installing Dependencies
+       pip:
+         requirements: ~/townCreator/requirements.txt
+
+
+     - name: WWW Move
+       command: "{{ item }} "
+       with_items:
+         - cp -r /root/townCreator/www /var/www/townCreator
+
+     - name: Check if default site exists
+       stat: path=/etc/nginx/sites-available/default
+       register: default_exists
+
+     - name: delete default site
+       command: rm /etc/nginx/sites-available/default
+       when: default_exists.stat.exists
+
+     - name: Filebeat Move
+       command: cp -r /root/townCreator/config_templates/filebeat/ /etc/
+      
+     - name: Nginx Move
+       command: cp -r /root/townCreator/config_templates/nginx/ /etc/
+
+     - name: townCreator Service Move
+       command: cp /root/townCreator/config_templates/service/townCreator.service /lib/systemd/system
+      
+     - name: Update systemctl
+       command: systemctl daemon-reload
+
+     - name: NGINX | Create Link
+       file:
+         src:  /etc/nginx/sites-available/townCreator
+         dest: /etc/nginx/sites-enabled/townCreator
+         state: link
+
+# START SERVICES
+     - name: NGINX | Starting NGINX
+       service:
+         name: nginx
+         state: started
+
+     - name: filebeat | Start filebeat
+       service:
+         name: filebeat
+         state: started
+
+     - name: townCreator | Start TOWNCREATOR
+       service:
+         name: townCreator.service
+         state: restarted
