@@ -1,0 +1,113 @@
+{
+"residence":[
+{
+"result":1,
+"inhabitant":"Couple with {} children.",
+"add_prop":{
+"add_roll":"2d8",
+"add_mod":"-1",
+"add_table":null
+}
+},
+{
+"result":2,
+"inhabitant":"Single adult with {} children.",
+"add_prop":{
+"add_roll":"1d8",
+"add_mod":-2,
+"add_table":null
+}
+},
+{
+"result":3,
+"inhabitant":"{}",
+"add_prop":{
+"add_type":"family_status",
+"add_roll":null,
+"add_mod":0,
+"add_table":[
+"Bachelor",
+"Bachelorette"
+]
+}
+},
+{
+"result":4,
+"inhabitant":"{}",
+"add":true,
+"add_prop":{
+"add_table":[
+"Sorcerer",
+"Wizard",
+"Warlock",
+"Ranger",
+"Fighter",
+"Cleric",
+"Druid",
+"Rogue",
+"Bard"
+],
+"add_mod":0,
+"add_roll":null,
+"reroll":true,
+"add_type":"adventurer"
+}
+},
+{
+"result":5,
+"inhabitant":"{}.",
+"add_prop":{
+"add_table":[
+"Widow",
+"Widower"
+]
+
+}
+},
+{
+"result":6,
+"inhabitant":"{} associates.",
+"add_prop":{
+"add_roll":"1d6",
+"add_mod":0,
+"add_table":null
+}
+},
+{
+"result":7,
+"inhabitant":"Extended family.",
+"add_prop":null
+},
+{
+"result":8,
+"inhabitant":"{} friends and lovers in a complicated relationship.",
+"add_prop":{
+"add_roll":"1d4",
+"add_mod":"1",
+"add_table":null
+}
+}
+],
+"relationship":[
+"irrational dislike",
+"Firm friends",
+"Harbours terrible suspicion",
+"Owes a debt",
+"Adultery",
+"Long family history",
+"Business",
+"Blackmail",
+"Estranged friends/lovers",
+"Political undertones",
+"Blatant fear",
+"Yearning",
+"Vast respect",
+"Black magic",
+"Rivalry",
+"Knows varied secrets",
+"Distrust",
+"Mockery",
+"Betrayal",
+"Blood feud"
+]
+}

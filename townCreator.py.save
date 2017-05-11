@@ -1,0 +1,77 @@
+from flask import Flask, render_template
+import requests
+import random 
+
+from datetime import datetime
+import argparse
+import json
+
+
+#function to generate number of dice dump the JSON objects to flask
+def die_properties():
+
+    dice_properties ={'set':''}
+
+    for dice in range(0,(random.randint(1,10)+10)):
+	dice_properties.append(
+		'type': 'd6',
+		'labelColor': '#aaaaaa',
+		'dieColor': '#202020'
+	)
+
+
+    die_properties = {
+	'set': dice_properties],
+	'constant': 0
+	}
+
+    return die_properties
+
+
+
+#get arguments for the analytics python script
+def get_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        '-H',
+        '--host',
+        help='Set web server listening host',
+        default='10.142.0.5'
+    )
+    parser.add_argument(
+        '-P',
+        '--port',
+        type=int,
+        help='Set web server listening port',
+        default=8000
+    )
+    parser.add_argument(
+        '-d', '--debug', help='Debug Mode', action='store_true'
+    )
+    parser.set_defaults(DEBUG=True)
+    return parser.parse_args()
+
+def create_app():
+    app = Flask(__name__, template_folder='templates')
+    return app
+
+app= create_app()
+
+#Render the canvas page
+@app.route('/')
+def index():
+    return render_template(
+		'index2.html'
+    )
+
+#output the dice roll results
+@app.route('/dice/results')
+def die_results():
+	die_results = u'{"set":[{"type":"d6","labelColor":"#aaaaaa","dieColor":"#202020"},{"type":"d6","labelColor":"#aaaaaa","dieColor":"#202020"},{"type":"d6","labelColor":"#aaaaaa","dieColor":"#202020"},{"type":"d6","labelColor":"#aaaaaa","dieColor":"#202020"},{"type":"d6","labelColor":"#aaaaaa","dieColor":"#202020"},{"type":"d6","labelColor":"#aaaaaa","dieColor":"#202020"},{"type":"d6","labelColor":"#aaaaaa","dieColor":"#202020"},{"type":"d6","labelColor":"#aaaaaa","dieColor":"#202020"},{"type":"d6","labelColor":"#aaaaaa","dieColor":"#202020"},{"type":"d6","labelColor":"#aaaaaa","dieColor":"#202020"},{"type":"d6","labelColor":"#aaaaaa","dieColor":"#202020"}],"constant":0}';
+	print json.loads(die_results)
+	return
+	#return die_results
+
+if __name__ == "__main__":
+    args = get_args()
+    app.run(debug=True,port=8000)

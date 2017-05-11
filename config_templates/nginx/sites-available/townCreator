@@ -1,0 +1,27 @@
+server {
+    listen 80;
+    server_name 10.142.0.5;
+    error_log /var/log/dm-buddy.log;
+    access_log /var/log/dm-buddy-acc.log;
+
+
+    # case sensitive matching
+    if ($http_user_agent ~ (Antivirx|Arian)) {
+        return 403;
+    }
+
+    # case insensitive matching
+    if ($http_user_agent ~* (netcrawl|npbot|malicious|wget|curl)) {
+        return 403;
+    }
+
+
+    location / {
+        include proxy_params;
+        proxy_pass http://127.0.0.1:8000;
+    }
+
+    location /static/ {
+	alias /var/www/townCreator/static/;
+    }
+}

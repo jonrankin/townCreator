@@ -1,0 +1,11 @@
+[Unit]
+Description=My Script Service
+After=multi-user.target
+
+[Service]
+Type=idle
+WorkingDirectory=/var/www/townCreator/
+ExecStart=/usr/bin/gunicorn  --bind 127.0.0.1:8000 townCreator:app
+
+[Install]
+WantedBy=multi-user.target
