@@ -124,12 +124,12 @@
      - name: NGINX | Starting NGINX
        service:
          name: nginx
-         state: started
+         state: restarted
 
      - name: filebeat | Start filebeat
        service:
          name: filebeat
-         state: started
+         state: restarted
 
      - name: townCreator | Start TOWNCREATOR
        service:
