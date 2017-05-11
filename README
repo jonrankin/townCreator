@@ -1,6 +1,0 @@
-# Procedural Town Generator
-
-This will be filled out
-
-
-ansible-playbook -k townCreator.yml -i localhost
