@@ -13,7 +13,7 @@ pyparsing==2.2.0
 python-apt==1.1.0b5
 requests==2.10.0
 six==1.10.0
-supervisor==3.3.1
+supervisor==3.3.3
 tabulate==0.7.7
 urllib3==1.15.1
 Werkzeug==0.12.1
